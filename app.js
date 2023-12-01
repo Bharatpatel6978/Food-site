@@ -40,7 +40,3 @@ const ob = new IntersectionObserver((enter,exit)=>{
   threshold:0,
 });
 ob.observe(counter_section);
-
-
-
-
