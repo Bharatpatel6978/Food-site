@@ -12,6 +12,9 @@ body {
   background-size: 100%;
   background-attachment: fixed;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #main {
   width: 100%;
@@ -20,13 +23,13 @@ body {
   width: 100%;
   min-height: 100vh;
 }
-#nav {
+.nav {
   width: 100%;
   display: flex;
   position: absolute;
   z-index: 1;
 }
-#nav .bar {
+.nav .bar {
   width: -webkit-fill-available;
   background-color: #121617;
   position: fixed;
@@ -34,11 +37,11 @@ body {
   box-shadow: 0px 24px 9px -16px #80808069;
   height: 5rem;
   padding: 15px 15px 18px 18px;
-  margin: 30px 50px;
+  margin: 20px 50px;
   display: flex;
   justify-content: space-between;
 }
-#nav img {
+.nav img {
   height: 3vw;
   width: 11vh;
   cursor: pointer;
@@ -168,7 +171,8 @@ body {
   background-color: #041314;
   box-shadow: 0px 0px 20px -5px white;
   border-radius: 16px;
-  margin-top: 50px;
+  margin: 26px -91px 0px 45px;
+  width: 99rem;
 }
 .wh_three {
   display: flex;
@@ -180,6 +184,7 @@ body {
   padding-bottom: 44px;
   position: relative;
   left: 7rem;
+  width: 79rem;
 }
 .wh_three h5 {
   padding-top: 30px;
@@ -260,7 +265,7 @@ body {
   width: 48px;
   position: absolute;
   background: red;
-  left: 31.2rem;
+  left: 39.2rem;
   top: -10px;
 }
 .review_section h3 {
@@ -329,7 +334,7 @@ h5 {
   flex-direction: column;
   align-items: center;
   top: 10rem;
-  left: 23rem;
+  left: 26rem;
   gap: 10px;
 }
 .sub_first h6 {
@@ -387,9 +392,9 @@ h5 {
 }
 
 .subscribe_img {
-  left: 7rem;
-  height: 27rem;
-  width: 66rem;
+  left: 0rem;
+  height: 34rem;
+  width: 80rem;
   position: relative;
   filter: blur(2px);
   top: 56px;
@@ -399,7 +404,7 @@ h5 {
   width: 100%;
   color: white;
   position: relative;
-  padding: 103px 223px;
+  padding: 103px 67px 31px 67px;
 }
 .footer_first_section {
   border-bottom: dotted 4px rgba(242, 246, 247, 0.3);
@@ -420,17 +425,20 @@ h5 {
   margin-top: -40px;
   margin-right: 12px;
 }
-
+.footer_info{
+  display: flex;
+}
 /* gallary section */
 .gallary_img {
-  height: 4rem;
-  width: 4rem;
-  padding: 11px;
-  border-radius: 19px;
+  height: 7rem;
+    width: 7.6rem;
+    padding: 14px;
+    border-radius: 29px;
+    cursor: pointer;
 }
 
 .gallary_slider {
-  width: 21rem;
+  /* width: 30.4rem; */
 }
 
 /* fix arrows position */
@@ -440,7 +448,44 @@ h5 {
 .swiper-button-prev {
   left: 10% !important;
 }
-
+.second_section{
+  border-bottom: dotted 4px rgba(242, 246, 247, 0.3);
+  padding-bottom: 48px;
+}
+.third_section{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+.copu_right
+{
+  font-weight: 400;
+  font-size: 15px;
+  font-family: 'Poppins';
+  color: #d3cfc6;
+  text-align: left;
+  cursor: pointer;
+}
+.myBtn{
+  font-family: 'Poppins';
+  color: #bb1e23;
+  text-align: right;
+  cursor: pointer;
+  font-weight: bolder;
+  border: none;
+  background-color: transparent;
+}
+.contact{
+  text-align: end; 
+  width: 21rem
+}
+.card-text{
+  color: #d3cfc6;
+  font-size: 20px;
+}
+.info_none{
+  display: none;
+}
 /* effects */
 
 .menu a:hover {
@@ -469,4 +514,41 @@ h5 {
 .slider_img a:hover {
   color: white;
   text-decoration: none;
+}
+
+/* media */
+@media screen and (max-width:1455px)  {
+  .contact{
+    width: 18rem;
+  }
+}
+@media screen and (max-width:1310px)  {
+  .contact{
+    width: fit-content;
+  }
+  .card-text{
+    font-size: 18px;
+  }
+}
+@media screen and (max-width:1198px){
+  .footer_info{
+    font-size: 13px;
+  }
+}
+@media screen and (max-width:1003px){
+  .footer_info{
+    display: none;
+  }
+  .info_none{
+    display: inline;
+    font-size: 12px;
+  }
+  .card-text{
+    font-size: 13px;
+  }
+}
+@media screen and (max-width:903px){
+  .info_none{
+    font-size: 10px;
+  }
 }

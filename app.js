@@ -40,3 +40,10 @@ const ob = new IntersectionObserver((enter,exit)=>{
   threshold:0,
 });
 ob.observe(counter_section);
+//go to top 
+let mybutton = document.getElementsByClassName(".myBtn");
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
