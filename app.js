@@ -1,13 +1,13 @@
-const toggle_menu = document.querySelector(".toggle_ul");
-const open = document.querySelector(".three_line")
-const close = document.querySelector(".close_line")
+// const toggle_menu = document.querySelector(".toggle_ul");
+// const open = document.querySelector(".three_line")
+// const close = document.querySelector(".close_line")
 
-function toggle_open(){
+// function toggle_open(){
 
-  toggle_menu.classList.toggle("open");
-  open.classList.toggle("close")
-  close.classList.toggle("open")
-}
+//   toggle_menu.classList.toggle("open");
+//   open.classList.toggle("close")
+//   close.classList.toggle("open")
+// }
 
 
 const counter_section = document.querySelector(".counter_sec");
@@ -46,4 +46,18 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+// nav
+let menu = document.getElementById("nav_btn")
+let close_btn = document.getElementById("nav_close")
+const toggle_menu = document.querySelector(".toggle_ul");
 
+menu.addEventListener('click',()=>{
+  close_btn.style.display = 'inline';
+  menu.style.display = 'none';
+  toggle_menu.classList.add("open");
+})
+close_btn.addEventListener('click',()=>{
+  close_btn.style.display = 'none';
+  menu.style.display = 'inline';
+  toggle_menu.classList.remove("open");
+})

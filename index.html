@@ -37,13 +37,10 @@
             <div style="width: 15%">
               <img src="assets/Y-NOT__white.png" alt="" />
             </div>
-            <div class="menu">
+            <div class="menu d_none">
               <a href="">Home</a>
               <div class="drop_down">
-                <a href="" class="menu_txt"
-                  >Menu<i class="ri-arrow-down-s-line down"></i
-                  ><i class="ri-arrow-up-s-line up"></i
-                ></a>
+                <a href="" class="menu_txt">Menu<i class="ri-arrow-down-s-line down"></i><i class="ri-arrow-up-s-line up"></i></a>
                 <ul class="drop_down_ul">
                   <li><a href="">one</a></li>
                   <li><a href="">two</a></li>
@@ -53,38 +50,39 @@
               <a href="">About Us</a>
               <a href="">Contact</a>
             </div>
-            <div class="btn1">
+            <div class="btn1 d_none">
               <div class="btn_div"><button>Book Table</button></div>
               <div class="btn_div">
-                <svg
-                  style="color: white; cursor: pointer"
-                  xmlns="http ://www.w3.org/2000/svg"
-                  width="35"
-                  height="35"
-                  fill="currentColor"
-                  class="bi bi-person"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"
-                  />
+                <svg style="color: white; cursor: pointer" xmlns="http ://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"class="bi bi-person" viewBox="0 0 16 16">
+                  <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
                 </svg>
               </div>
               <div class="btn_div">
-                <svg
-                  style="color: white; cursor: pointer"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="35"
-                  height="35"
-                  fill="currentColor"
-                  class="bi bi-bag"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"
-                  />
+                <svg style="color: white; cursor: pointer" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16" >
+                  <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
                 </svg>
               </div>
+            </div>
+            <div class="d_block">
+              <button id="nav_btn"><svg class="toggle_btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" ><path d="M3 4H21V6H3V4ZM9 11H21V13H9V11ZM3 18H21V20H3V18Z" fill="rgba(255,255,255,1)"></path></svg></button>
+              <button id="nav_close"><svg class="toggle_btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="43" height="43"><path d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z" fill="rgba(255,255,255,1)"></path></svg></button>
+            </div>
+            <div class="toggle_main_menu">
+              <ul class="toggle_ul">
+                <li class="main_menu_toggle"><a href="">Home</a></li>
+                <li class="toggle_menu"><a href="">Menu</a>
+                  <ul>
+                    <li><a href="" class="sub_menu">one</a></li>
+                    <li><a href="" class="sub_menu">two</a></li>
+                    <li><a href="" class="sub_menu">three</a></li>
+                  </ul>
+                </li>
+                <li class="main_menu_toggle"><a href="">About Us</a></li>
+                <li class="main_menu_toggle"><a href="">Contact Us</a></li>
+                <li class="main_menu_toggle"><a href="">Account</a></li>
+                <li class="main_menu_toggle"><a href="">Cart</a></li>
+                <li class="main_menu_toggle"><a href="">Book table</a></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -257,6 +255,7 @@
                     src="assets/dessert.png"
                     class="d-block w-100"
                     alt="Image not found"
+                    style="height: 51rem;"
                 /></a>
                 <div class="carousel-caption d-none d-md-block">
                   <a href=""
@@ -277,6 +276,7 @@
                     src="assets/juice.png"
                     class="d-block w-100"
                     alt="Image not found"
+                    style="height: 51rem;"
                 /></a>
                 <div class="carousel-caption d-none d-md-block">
                   <a href=""
@@ -297,6 +297,7 @@
                     src="assets/cold_drink.png"
                     class="d-block w-100"
                     alt="Image not found"
+                    style="height: 51rem;"
                 /></a>
                 <div class="carousel-caption d-none d-md-block">
                   <a href=""
@@ -825,12 +826,12 @@
                       <p style="font-weight: bolder">FIND US :</p>
                     </div>
                     <div class="contact">
-                      <p>+91 7696963943</p>
+                      <p>+91 7698963943</p>
                       <p>bharatmungalpara664@gmail.com</p>
                       <p>Rajkot, Gujarat</p>
                     </div>
                   </div>
-                  <p class="info_none">CALL :+91 7696963943 <br></p>
+                  <p class="info_none">CALL :+91 7698963943 <br></p>
                   <p class="info_none">WRITE :bharatmungalpara664@gmail.com <br></p>
                   <p class="info_none">FIND US :Rajkot, Gujarat <br></p>
                 </div>
@@ -853,8 +854,8 @@
 
                   <div class="gallary_slider">
                     <div style="overflow-x: hidden">
-                      <div class="swiper mySwiper" style="width: 59.4vh;">
-                        <div class="swiper-wrapper">
+                      <div class="swiper mySwiper swiper_gallary" style="width: 59.4vh;">
+                        <div class="swiper-wrapper" style="gap: 46px;">
                           <div class="swiper-slide">
                             <img
                               class="gallary_img"
